@@ -5,7 +5,7 @@
 // diğer uzantıların içerik komut dosyalarıyla çakışmadan
 // JavaScript ortamlarında değişiklik yapabilirler
 
-//Alan "matches", bir veya daha fazla eşleşme modeline sahip olabilir . Bunlar, tarayıcının içerik komut dosyalarını hangi sitelere enjekte edeceğini belirlemesine olanak tanır. Maç kalıpları üç bölümden oluşur <scheme>://<host><path>. *' ' karakterleri içerebilirler .
+// Alan "matches", bir veya daha fazla eşleşme modeline sahip olabilir . Bunlar, tarayıcının içerik komut dosyalarını hangi sitelere enjekte edeceğini belirlemesine olanak tanır. Maç kalıpları üç bölümden oluşur <scheme>://<host><path>. *' ' karakterleri içerebilirler .
 
 // const article = document.querySelector("article");
 
@@ -44,11 +44,12 @@ var kelimeler = [];
 kelimeler=makale.split(" ");
 
 
-console.log(kelimeler.length)
 
-var eleman= document.createElement("p")
+var kelimeSayisi=kelimeler.length
+console.log(kelimeSayisi)
 
-eleman.innerHTML= kelimeler.length.toString
 
-var h=document.getElementsByTagName("h2")
-document.h.appendChild(bolum);
+
+var element= document.createElement("h2")
+element.innerText= "⏱️BU SAYFAYI OKUMA SÜRESİ "+(kelimeSayisi*0.3)
+document.body.appendChild(element);
